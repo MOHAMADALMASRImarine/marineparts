@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التسجيل - شركة التوريدات البحرية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background-color: #f5f7fa;
+      color: #062B4F;
+    }
+    header {
+      background-color: #062B4F;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #087FC1;
+      text-align: center;
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #087FC1;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #062B4F;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>التسجيل / تسجيل الدخول</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="services.html">الخدمات</a>
+      <a href="about.html">من نحن</a>
+      <a href="support.html">الدعم</a>
+      <a href="login.html">التسجيل</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>أدخل بياناتك</h2>
+    <form class="login-form">
+      <input type="text" placeholder="اسم المستخدم" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">تسجيل الدخول</button>
+      <button type="button" onclick="alert('تم إنشاء حساب جديد بنجاح')">إنشاء حساب جديد</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 شركة التوريدات البحرية - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    document.querySelector('.login-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('تم تسجيل الدخول بنجاح.');
+    });
+  </script>
+</body>
+</html>
