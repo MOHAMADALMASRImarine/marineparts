@@ -1,0 +1,122 @@
+/* style.css - تصميم احترافي لموقع شركة التوريدات البحرية */
+
+/* إعدادات عامة */
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background-color: #f5f7fa;
+  color: #062B4F;
+  line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+  background: linear-gradient(to right, #062B4F, #087FC1);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffd700;
+}
+
+/* البانر الرئيسي */
+.hero {
+  background: url('images/ship_banner.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero h2 {
+  font-size: 3em;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* الأقسام */
+section {
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+h2 {
+  color: #087FC1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* المنتجات والخدمات */
+.product-grid, .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.product, .service {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.product:hover, .service:hover {
+  transform: translateY(-5px);
+}
+.product img, .service img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.price {
+  font-weight: bold;
+  color: #062B4F;
+}
+
+/* النماذج */
+input, textarea, button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+button {
+  background-color: #087FC1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #062B4F;
+}
+
+/* الفوتر */
+footer {
+  background: linear-gradient(to right, #062B4F, #087FC1);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
