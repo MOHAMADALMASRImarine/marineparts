@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>شركة التوريدات البحرية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background-color: #f5f7fa;
+      color: #062B4F;
+    }
+    header {
+      background-color: #062B4F;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #087FC1;
+    }
+    footer {
+      background-color: #062B4F;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .contact-form, .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #087FC1;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>شركة التوريدات البحرية</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#services">الخدمات</a>
+      <a href="#about">من نحن</a>
+      <a href="#support">الدعم والتواصل</a>
+      <a href="#login">التسجيل</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>مرحبا بكم</h2>
+    <p>نحن متخصصون في توريد جميع قطع غيار المكنة والسطح، بالإضافة إلى كافة احتياجات السفن من معدات وأدوات السلامة.</p>
+  </section>
+
+  <section id="products">
+    <h2>منتجاتنا</h2>
+    <ul>
+      <li>قطع غيار المحركات البحرية (Engine Parts)</li>
+      <li>معدات السطح (Deck Equipment)</li>
+      <li>حبال، دهانات، أدوات السلامة (Safety Supplies)</li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>خدماتنا</h2>
+    <p>توريد سريع للموانئ، تجهيز طلبات خاصة للسفن، دعم فني وصيانة.</p>
+  </section>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>شركة سورية بحرية بخبرة طويلة في مجال التوريدات البحرية، نخدم السفن في مومباسا، موزمبيق، وكينيا.</p>
+  </section>
+
+  <section id="support">
+    <h2>الدعم والتواصل</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="اسمك" required>
+      <input type="email" placeholder="بريدك الإلكتروني" required>
+      <textarea placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+    <p>📧 البريد الإلكتروني: info@marine-supplies.com</p>
+    <p>📞 الهاتف: +963-999-999999</p>
+    <p>📍 العنوان: مكتب الشركة - ميناء اللاذقية</p>
+  </section>
+
+  <section id="login">
+    <h2>التسجيل / تسجيل الدخول</h2>
+    <form class="login-form">
+      <input type="text" placeholder="اسم المستخدم" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">تسجيل الدخول</button>
+      <button type="button">إنشاء حساب جديد</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 شركة التوريدات البحرية - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    // مثال بسيط لمعالجة النموذج
+    document.querySelector('.contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('تم إرسال رسالتك بنجاح، سنتواصل معك قريبًا.');
+    });
+    document.querySelector('.login-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('تم تسجيل الدخول بنجاح.');
+    });
+  </script>
+</body>
+</html>
